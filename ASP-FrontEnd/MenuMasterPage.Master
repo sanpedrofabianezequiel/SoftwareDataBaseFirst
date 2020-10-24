@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuMasterPage.master.cs" Inherits="ASP_FrontEnd.MenuMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align:center"> 
+
+            <h2 class="bg-info">Aplicacion WEB - ADO.NET - DataBase CodeFirst</h2>
+               <asp:Menu ID="Menu" runat="server" Font-Bold="True" Font-Size="Medium" Orientation="Horizontal" >
+            <Items >
+                <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Paises" Value="Paises"></asp:MenuItem>
+                <asp:MenuItem Text="Generos" Value="Generos"></asp:MenuItem>
+                <asp:MenuItem Text="Editoriales" Value="Editoriales"></asp:MenuItem>
+                <asp:MenuItem Text="Autores" Value="Autores">
+                    <asp:MenuItem Text="Consultar" Value="Consultar"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Libros" Value="Libros">
+                    <asp:MenuItem Text="Consultar Gral." Value="Consultar Gral." NavigateUrl="~/ConsultaLibrosGeneral.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Consulta Particular" Value="Consulta Particular"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Registrarse" Value="Registrarse"></asp:MenuItem>
+                <asp:MenuItem Text="Cerrar Sesion" Value="Cerrar Sesion"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+     
+    </form>
+</body>
+</html>

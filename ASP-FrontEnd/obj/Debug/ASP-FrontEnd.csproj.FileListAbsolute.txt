@@ -67,3 +67,6 @@ C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\obj\Debug\ASP-Fro
 C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\Datos.dll
 C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\Datos.pdb
 C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\Datos.dll.config
+C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\LogicaBI.dll.config
+C:\Users\sanpe\source\repos\SoftwareDataBaseFirst\ASP-FrontEnd\bin\EntityFramework.SqlServer.xml
