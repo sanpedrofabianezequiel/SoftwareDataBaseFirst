@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ConsultaLibrosGeneral.aspx" />
+    <Content Include="ConsultaParticular.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="ConsultaLibrosGeneral.aspx.designer.cs">
       <DependentUpon>ConsultaLibrosGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaParticular.aspx.cs">
+      <DependentUpon>ConsultaParticular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaParticular.aspx.designer.cs">
+      <DependentUpon>ConsultaParticular.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

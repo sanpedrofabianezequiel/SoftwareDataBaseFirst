@@ -22,8 +22,8 @@ namespace LogicaBI
         }
         public object TraerAlgunos() 
         {
-             List<Entidades.Libro> librosCampos=  _context.TraerAlgunos() as List<Entidades.Libro>;
-            return librosCampos;
+
+            return _context.TraerAlgunos();
         }
     }
 }

@@ -6,16 +6,21 @@
     <br />  
     <div>   
         <h2> Vista de Libros</h2>
-        <asp:GridView ID="gvLibros" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Height="252px" Width="695px" AllowPaging="true">
-            <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510"/>
-            <HeaderStyle BackColor="ActiveBorder" Font-Bold="true" ForeColor="White"/>
-            <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center"/>
-            <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510"/>
-            <SelectedRowStyle BackColor="#738A9C" Font-Bold="true" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#FFF1D4"/>
-            <SortedAscendingHeaderStyle BackColor="#B95C30"/>
-            <SortedDescendingCellStyle BackColor="#F1E5CE" />
-            <SortedDescendingHeaderStyle  BackColor="#93451F"/>
+        <asp:GridView ID="gvLibros" runat="server" CellPadding="4" Height="252px" Width="695px" AllowPaging="True" ForeColor="#333333" GridLines="None">
+           
+         
+            <AlternatingRowStyle BackColor="White" />
+           
+         
+            <FooterStyle BackColor="#990000" ForeColor="White" Font-Bold="True"/>
+            <HeaderStyle BackColor="#990000" Font-Bold="true" ForeColor="White"/>
+            <PagerStyle ForeColor="#333333" HorizontalAlign="Center" BackColor="#FFCC66"/>
+            <RowStyle BackColor="#FFFBD6" ForeColor="#333333"/>
+            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="true" ForeColor="Navy" />
+            <SortedAscendingCellStyle BackColor="#FDF5AC"/>
+            <SortedAscendingHeaderStyle BackColor="#4D0000"/>
+            <SortedDescendingCellStyle BackColor="#FCF6C0" />
+            <SortedDescendingHeaderStyle  BackColor="#820000"/>
         </asp:GridView>
     </div>
 

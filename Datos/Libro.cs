@@ -31,7 +31,10 @@ namespace Datos
                           {
                               x.ISBN,
                               x.Titulo,
-                              x.Edicion
+                              x.Edicion,
+                             ID_Genero=x.Genero.ID,
+          /*Alias = linq*/   Genero=x.Genero.Descripcion
+
                           }).ToList() ;
             return libros;
         }
