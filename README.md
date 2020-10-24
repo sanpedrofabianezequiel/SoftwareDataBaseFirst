@@ -1,6 +1,22 @@
 # SoftwareDataBaseFirst
 
 
+
+#Aclaracion para los metodos que solo traern Algunos CAMPOS
+en la Instruccion LINQ
+ var libros = (from x in _context.Libros
+                          select new
+                          {
+                              x.ISBN,
+                              x.Titulo,
+                              x.Edicion
+                          }).ToList() ;
+            return libros;
+------------------------------------------
+Con ADO.NET 
+Creamos en el Proyecto, los Modelos en base a las TABLAS
+luego debemos configurar Las Capaz de Datos y LogicaBI
+
 Utilizamos el Patron ADO.NET => DataBaseCodeFirst
 
 Recordemos que cuando Elegimos las tablas para crear nuestros
