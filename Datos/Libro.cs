@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Datos
 {
@@ -24,17 +25,18 @@ namespace Datos
             return libros.ToList();
         }
 
-        public object TraerAlgunos()            //Traer ALGUNOS CAMPOS de Libros
+        public List<ViewModels.ViewModelLibro> TraerAlgunos()            //Traer ALGUNOS CAMPOS de Libros
         {
             var libros = (from x in _context.Libros
-                          select new
+                          select new ViewModels.ViewModelLibro
                           {
-                              x.ISBN,
-                              x.Titulo,
-                              x.Edicion,
-                             ID_Genero=x.Genero.ID,
-          /*Alias = linq*/   Genero=x.Genero.Descripcion
-
+                              ISBN= x.ISBN,
+                              Titulo = x.Titulo,
+                              Edicion =x.Edicion,
+                              CodigoGenero=x.Genero.ID,
+                              Genero =x.Genero.Descripcion,
+                              CodigoEditorial=x.Editoriale.ID,
+                              Editorial= x.Editoriale.Descripcion
                           }).ToList() ;
             return libros;
         }
