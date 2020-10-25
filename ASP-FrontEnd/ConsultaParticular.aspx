@@ -7,7 +7,12 @@
      <br />  
     <div>   
         <h2> Vista de Libros Particular</h2>
-        <asp:GridView ID="gvLibrosParticular" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" Height="252px" Width="695px" AllowPaging="True" ForeColor="Black" GridLines="Horizontal">
+        <asp:GridView ID="gvLibrosParticular" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" Height="252px" Width="695px" AllowPaging="True" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="gvLibrosParticular_SelectedIndexChanged">
+           
+         
+            <Columns>
+                <asp:CommandField ShowSelectButton="True" />
+            </Columns>
            
          
             <FooterStyle BackColor="#CCCC99" ForeColor="Black"/>
@@ -21,7 +26,10 @@
         </asp:GridView>
     </div>
 
+    <div >
 
+        <asp:ListBox ID ="lbAutores" runat="server" CssClass="w-50"></asp:ListBox>
+    </div>    
 
 
 

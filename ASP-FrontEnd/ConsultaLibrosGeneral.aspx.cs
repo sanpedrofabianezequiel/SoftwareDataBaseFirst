@@ -32,7 +32,7 @@ namespace ASP_FrontEnd
         }
         public object TraerAlgunos()
         {
-            List<Entidades.Libro> librosCampos = _context.TraerAlgunos() as List<Entidades.Libro>;
+            List<Entidades.ViewModels.ViewModelLibro> librosCampos = _context.TraerAlgunos();
             return librosCampos;
         }
     }

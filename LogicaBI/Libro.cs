@@ -1,9 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ModeloLibro = Entidades.ViewModels;
+//Alias en los Using
 namespace LogicaBI
 {
     public class Libro
@@ -20,7 +22,7 @@ namespace LogicaBI
 
             return libros;
         }
-        public object TraerAlgunos() 
+        public List<ModeloLibro.ViewModelLibro> TraerAlgunos() 
         {
 
             return _context.TraerAlgunos();

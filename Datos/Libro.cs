@@ -25,10 +25,10 @@ namespace Datos
             return libros.ToList();
         }
 
-        public List<ViewModels.ViewModelLibro> TraerAlgunos()            //Traer ALGUNOS CAMPOS de Libros
+        public List<Entidades.ViewModels.ViewModelLibro> TraerAlgunos()            //Traer ALGUNOS CAMPOS de Libros
         {
             var libros = (from x in _context.Libros
-                          select new ViewModels.ViewModelLibro
+                          select new Entidades.ViewModels.ViewModelLibro
                           {
                               ISBN= x.ISBN,
                               Titulo = x.Titulo,

@@ -25,5 +25,25 @@ namespace ASP_FrontEnd
             gvLibrosParticular.DataBind();
         }
 
+        protected void gvLibrosParticular_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Resolucio en el FrontEnd
+            lbAutores.Items.Clear();//Lo lipiamos por las dudas
+            GridViewRow filaSeleccionada = gvLibrosParticular.SelectedRow;//La fila donde se hizo Click
+            string isbn = filaSeleccionada.Cells[1].Text;//Cells[Indicamos la Columna]
+
+            foreach (var item in _context.TraerTodos())//Para traer todos los libros
+            {
+                if (isbn== item.ISBN) //Si la fila seleccionada del ISBN correspondes, que traiga todos los autores
+                {
+                    //Que me traiga todos los autores
+                    foreach (var item2 in item.Autores)
+                    {
+                        lbAutores.Items.Add(item2.Apellido + " " + item2.Nombre + " "+ item2.Pais.Nombre);
+                    }
+                }
+            }
+            
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datos.ViewModels
+namespace Entidades.ViewModels
 {
     public class ViewModelLibro
     {
