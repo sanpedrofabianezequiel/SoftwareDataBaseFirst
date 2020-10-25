@@ -28,7 +28,7 @@
 
     <div >
 
-        <asp:ListBox ID ="lbAutores" runat="server" CssClass="w-50"></asp:ListBox>
+        <asp:ListBox ID ="lbAutores" runat="server" CssClass="w-100"></asp:ListBox>
     </div>    
 
 
